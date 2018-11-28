@@ -1,5 +1,5 @@
-# Define your Coin class here
-
+class Coin():
+  pass
 
 if __name__ == '__main__':
   # put your code that utilizes your Coin class here
