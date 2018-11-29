@@ -5,6 +5,9 @@ class Fraction(object):
         if self.denominator == 0:
             raise ValueError("denominator can't be zero")
 
+    def get_numerator(self):
+        return self.numerator
+i
 if __name__ == '__main__':
   # put your code that utilizes your Fraction class here
   pass
