@@ -14,6 +14,10 @@ class Fraction(object):
     def set_numerator(self, new_numerator):
         self.numerator = new_numerator
 
+    def set_denominator(self, new_denominator):
+        self.denominator = new_denominator
+        if self.denominator == 0:
+            raise ValueError("denominator can't be zero")
 
 if __name__ == '__main__':
   # put your code that utilizes your Fraction class here
