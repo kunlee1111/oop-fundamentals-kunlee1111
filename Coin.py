@@ -1,13 +1,13 @@
 import random
 class Coin():
     def __init__(self):
-        self.face = 'Heads'
+        self.face = 'heads'
 
     def get_face(self):
         return self.face
 
     def flip(self):
-        return str(random.choice(["Heads", "Tails"]))
+        return str(random.choice(["heads", "tails"]))
 
 if __name__ == '__main__':
     a = 0
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     while a <= 1000:
         coin.flip()
         a += 1
-        if coin.get_face() == 'Heads':
+        if coin.get_face() == 'heads':
             total_Heads += 1
         else:
             total_Tails += 1
