@@ -21,7 +21,7 @@ class Fraction(object):
             raise ValueError("denominator can't be zero")
 
     def __str__(self):
-        return "%i/%i" % (self.numerator, self.denominator)
+        return str(self.numerator)+"/"+str(self.denominator)
 
     def __reduce(self):
         gcd = lambda m, n: m if not n else gcd(n, m % n)
@@ -43,5 +43,8 @@ class Fraction(object):
         self.denominator = self.denominator*otherFraction.denominator
 
 if __name__ == '__main__':
-  # put your code that utilizes your Fraction class here
-  pass
+    print("** Fraction 1 **")
+    Fraction1 = Fraction(int(input("Enter the numerator: ")), int(input("Enther the denominator: ")))
+    Fraction2 = Fraction(int(input("Enter the numerator ")), int(input("Enter the denominator: ")))
+    output = (Fraction1 * Fraction2)
+    print(output)
