@@ -22,5 +22,3 @@ if __name__ == '__main__':
         else:
             total_Tails += 1
     print ("Total Heads Count is"+ total_Heads + "Total Tails Count is"+ total_Tails)
-
-    pass
