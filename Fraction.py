@@ -34,6 +34,10 @@ class Fraction(object):
         self.numerator = self.numerator * otherFraction.denominator + otherFraction.numerator * self.denominator
         self.denominator = self.denominator * otherFraction.denominator
 
+    def subtract(self, otherFraction):
+        self.numerator = self.numerator*otherFraction.denominator-otherFraction.numerator*self.denominator
+        self.denominator = self.denominator+otherFraction.denominator
+
 
 if __name__ == '__main__':
   # put your code that utilizes your Fraction class here
