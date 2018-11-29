@@ -4,6 +4,7 @@ class Coin():
 
     def get_face(self):
         return self.face
+    
 
 
 
