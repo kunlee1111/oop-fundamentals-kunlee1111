@@ -13,6 +13,9 @@ class Coin():
         else:
             self.face = "Tails"
 
+    def set_face(self, face_str):
+        self.face = face_str
+
 if __name__ == '__main__':
   # put your code that utilizes your Coin class here
   pass
