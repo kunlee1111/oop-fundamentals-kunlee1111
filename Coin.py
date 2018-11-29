@@ -2,7 +2,8 @@ class Coin():
     def __init__(self):
         self.face = 'Heads'
 
-
+    def get_face(self):
+        return self.face
 
 
 
