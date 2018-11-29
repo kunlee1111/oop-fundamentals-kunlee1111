@@ -41,4 +41,9 @@ class Fraction(object):
     def multiply(self, otherFraction):
         self.numerator = self.numerator*otherFraction.numerator
         self.denominator = self.denominator*otherFraction.denominator
-g
+
+if __name__ == '__main__':
+    print("** Fraction 1 **")
+    Fraction1 = Fraction(1,2)
+
+    pass
