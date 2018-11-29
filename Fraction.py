@@ -11,6 +11,10 @@ class Fraction(object):
     def get_denominator(self):
         return self.denominator
 
+    def set_numerator(self, new_numerator):
+        self.numerator = new_numerator
+
+
 if __name__ == '__main__':
   # put your code that utilizes your Fraction class here
   pass
