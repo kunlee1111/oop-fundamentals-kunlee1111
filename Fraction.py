@@ -1,3 +1,4 @@
+
 class Fraction(object):
     def __int__(self, numerator, denominator):
         self.numerator = numerator
@@ -22,7 +23,12 @@ class Fraction(object):
     def __str__(self):
         return "%i/%i" % (self.numerator, self.denominator)
 
-
+    def __reduce(self):
+        gcd = lambda m, n: m if not n else gcd(n, m % n)
+        gcded = gcd(self.numerator, self.denominator)
+        self.numerator = self.numerator / gcded
+        self.denominator = self.denominator.gcded
+        return self
 
 if __name__ == '__main__':
   # put your code that utilizes your Fraction class here
