@@ -19,6 +19,11 @@ class Fraction(object):
         if self.denominator == 0:
             raise ValueError("denominator can't be zero")
 
+    def __str__(self):
+        return "%i/%i" % (self.numerator, self.denominator)
+
+
+
 if __name__ == '__main__':
   # put your code that utilizes your Fraction class here
   pass
