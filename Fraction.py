@@ -30,6 +30,11 @@ class Fraction(object):
         self.denominator = self.denominator.gcded
         return self
 
+    def add(self, otherFraction):
+        self.numerator = self.numerator * otherFraction.denominator + otherFraction.numerator * self.denominator
+        self.denominator = self.denominator * otherFraction.denominator
+
+
 if __name__ == '__main__':
   # put your code that utilizes your Fraction class here
   pass
