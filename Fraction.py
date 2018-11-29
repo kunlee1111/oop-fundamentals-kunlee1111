@@ -7,7 +7,10 @@ class Fraction(object):
 
     def get_numerator(self):
         return self.numerator
-i
+
+    def get_denominator(self):
+        return self.denominator
+
 if __name__ == '__main__':
   # put your code that utilizes your Fraction class here
   pass
