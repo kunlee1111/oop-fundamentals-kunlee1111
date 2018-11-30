@@ -112,7 +112,6 @@ class Fraction(object):
         self.__reduce()
         return self
 
-
 if __name__ == "__main__":
     print("** Fraction 1 **")   #prints to indicate the first fraction to be input.
     numerator = int(input("Enter the numerator:"))    #user interger input for numerator
@@ -125,5 +124,4 @@ if __name__ == "__main__":
     print("{} + {} = {}".format(fraction1,fraction2,fraction1.add(fraction2))) #prints the added formula
     print("{} - {} = {}".format(fraction1,fraction2,fraction1.subtract(fraction2))) #prints the subtracted formula
     print("{} * {} = {}".format(fraction1,fraction2,fraction1.multiply(fraction2))) #prints the multiplied formula
-
     pass
