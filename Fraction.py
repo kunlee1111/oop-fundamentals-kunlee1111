@@ -59,5 +59,16 @@ class Fraction(object):
 
 
 if __name__ == "__main__":
+    print("** Fraction 1 **")
+    numerator = int(input("Enter the numerator:"))
+    denominator = int(input("Enter the denominator:"))
+    fraction1 = Fraction(numerator, denominator)
+    print("** Fraction 2 **")
+    numerator = int(input("Enter the numerator:"))
+    denominator = int(input("Enter the denominator:"))
+    fraction2 = Fraction(numerator, denominator)
+    print("{} + {} = {}".format(fraction1,fraction2,fraction1.add(fraction2)))
+    print("{} - {} = {}".format(fraction1,fraction2,fraction1.subtract(fraction2)))
+    print("{} * {} = {}".format(fraction1,fraction2,fraction1.multiply(fraction2)))
 
     pass
